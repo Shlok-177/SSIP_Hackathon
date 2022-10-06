@@ -1,0 +1,155 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 4rem;
+    transition: all 300ms ease;
+    border-right: 1px solid rgba(71, 71, 71, 0.411);
+    color: white;
+  }
+  /* logo */
+  .bars{
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 22px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+  }
+  .logo > span > span {
+    color: white;
+  }
+
+  .logo > img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+
+  /* menu */
+  .menu {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .menuItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 3.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 0rem;
+    font-size: 15px;
+  }
+
+  .display{
+    display: none;
+  }
+
+
+  .white{
+   color: white;
+  }
+  .white_active{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 6px;
+   height: 35px;
+   width: 35px;
+   background-color: #f8d837;
+   color: black;
+  }
+  .menu .menuItem:last-child {
+    position: absolute;
+    bottom: 2.3rem;
+    width: 100%;
+  }
+
+  .active {
+    padding-left: 5px;
+    color: #F8D937;
+
+  }
+  .active::after {
+    content: "";
+    width: 2px;
+    height: 70%;
+    background: #F8D937;
+
+  }
+
+
+
+  /* Tablets */
+  @media screen and (max-width: 1200px) {
+    .menuItem>span{
+      display: none;
+    }
+    .logo{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar{
+      position: fixed;
+      z-index: 9;
+      background: white;
+      color: black;
+      width: 55%;
+      padding-right: 1rem;
+      height: 100%;
+    }
+    .white{
+      color: black;
+      display: flex;
+      flex-direction: row;
+
+    }
+    .logo{
+      display: flex;
+    }
+    .menu .menuItem:last-child {
+      position: relative;
+      margin-top: 6rem;
+    }
+    .display{
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+    }
+
+    .active {
+      margin-left: 0px;
+      padding-left: 25px;
+      overflow: hidden;
+      width: 97%;
+      color: black;
+      background-color: #F8D937;
+    }
+
+    .bars{
+      display: flex;
+      position: fixed;
+      top: 2rem;
+      left:60%;
+      background:#F8D937;
+      padding:10px;
+      border-radius: 10px;
+      z-index: 9;
+    }
+    .close{
+      left: -60%;
+    }
+  }
+

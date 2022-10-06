@@ -1,0 +1,19 @@
+
+.learing{
+    width: 100%;
+    /* height: 100vh; */
+    overflow-y: scroll;
+}
+
+.heading h1{
+    color: white;
+    font-weight: 400;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.411);;
+}
+

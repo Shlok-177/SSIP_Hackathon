@@ -1,0 +1,105 @@
+.Main_div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.dictionary-card {
+    width: 280px;
+    height: 220px;
+    background: #1e1f26;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    color: #fffff6;
+    position: relative;
+    display: inline-block;
+}
+.dictionary-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    cursor: pointer;
+
+}
+
+.left-ellipse img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 20px;
+}
+.right-ellipse img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 20px;
+}
+
+.character img {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    height: 200px;
+}
+
+.star1,
+.star2,
+.star3,
+.star4 {
+    position: absolute;
+}
+
+.star1 {
+    top: 120px;
+    left: 50px;
+}
+.star2 {
+    top: 60px;
+    left: 90px;
+}
+.star3 {
+    top: 45px;
+    left: 230px;
+}
+.star4 {
+    top: 110px;
+    left: 285px;
+}
+.star2 img {
+    width: 12px;
+}
+.star3 img {
+    width: 9px;
+}
+
+.sign-info-btn {
+    position: absolute;
+    left: 0;
+    border-radius: 20px;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: rgba(237, 252, 255, 0.37);
+    backdrop-filter: blur(27.5px);
+    display: flex;
+    align-items: center;
+}
+
+.sign-info-btn .sign-text {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.sign-info-btn .arrow-btn {
+    position: absolute;
+    background: #f8d937;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    right: 20px;
+}
